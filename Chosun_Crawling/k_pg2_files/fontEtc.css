@@ -1,0 +1,17 @@
+@charset "UTF-8";
+
+@font-face { 
+  font-family:"MalgunGothic";
+  src:url("../font/MalgunGothic.eot"); 
+/*   src:url("../font/MalgunGothic.eot?#iefix")format('embedded-opentype'),  */
+/*   src:url("../font/MalgunGothic.woff")format('woff'),  */
+  src:url("../font/MalgunGothic.TTF")format('truetype'); 
+}
+
+@font-face { 
+  font-family:"NanumBarunGothic";
+  src:url("../font/NanumBarunGothic.eot"); 
+/*   src:url("../font/NanumBarunGothic.eot?#iefix")format('embedded-opentype'),  */
+/*   src:url("../font/NanumBarunGothic.woff")format('woff'),  */
+  src:url("../font/NanumBarunGothic.ttf")format('truetype'); 
+}

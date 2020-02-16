@@ -1,0 +1,42 @@
+/***** ly_Popup Contents *****/
+
+/* table */
+.basic_table table {
+    width:100%;
+}
+.basic_table table th{
+    height:40px;
+    padding-left: 10px;
+    border-top:1px solid #e5e5e5;
+    border-bottom:1px solid #e5e5e5;
+    background-color: #999ba1;
+    color:#fff;
+    text-align: left;
+    padding-top:4px;
+    vertical-align:middle;
+}
+.basic_table table td {
+    height:40px;
+    padding-left: 10px;
+    border-top:1px solid #e5e5e5;
+    border-bottom: 1px solid #e5e5e5;
+    color: #4d4d4d;
+    line-height: 20px;
+    vertical-align: middle;
+}
+
+/***** ly_Popup Contents button *****/
+
+.lyPopBtnClose {
+    width: 100%;
+    height: 45px;
+    margin-top: 25px;
+    background: #e3e3e3;
+    color: #555555;
+    font-weight: 600;
+    text-align: center;    
+}
+.lyPopBtnClose:hover {
+    background: #757575;
+    color: #fff;
+}
