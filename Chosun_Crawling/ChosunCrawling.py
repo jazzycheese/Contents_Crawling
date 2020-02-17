@@ -23,9 +23,9 @@ titles = soup.select('tbody'>tr)
 print (titles)
 
 
-1:tbody>tr>2번쨰td>font>a>font>1번쨰font 내용
-1:tbody>tr>2번쨰td>font>a>font>1번쨰font>b 내용
-1:tbody>tr>2번쨰td>font>a>font 내용
+#1:tbody>tr>2번쨰td>font>a>font>1번쨰font 내용
+#1:tbody>tr>2번쨰td>font>a>font>1번쨰font>b 내용
+#1:tbody>tr>2번쨰td>font>a>font 내용
 
 #연도월일날짜, 면
 2:tbody>1번쨰tr>2번째td>table>tbody>1번째tr>td>font>내용
