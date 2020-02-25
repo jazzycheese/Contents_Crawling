@@ -1,22 +1,21 @@
 import xlrd 
  
 #Change the location of the file
-loc = "/Users/soyeon/dev/khaiii/test.xlsx"
-
+loc = "/Users/soyeon/dev/NewsAnalysis/WordCount/Kyung90Corpus.xlsx"
+  
 wb = xlrd.open_workbook(loc) 
 sheet = wb.sheet_by_index(0) 
-
+  
 # Extracting number of columns 
 print(sheet.ncols) 
 print(sheet.nrows) 
 
-data = []
+data = [] # Header
 
-#for row 0 and column 0
-sheet.cell_value(0,0)
-for i in range(sheet.ncols): 
-    print(sheet.cell_value(0, i)) 
-    data.append(sheet.cell_value(0,i))
+for col in range(sheet.ncols):  # Chosun: sheetn.nrows>, Han :sheet.ncols>
+    for row in range(sheet.ncols):
+        data.append(sheet.cell_value(row,col))
+data = [x for x in data if x != ''] 
 
 from collections import Counter
 import csv
@@ -31,6 +30,6 @@ data_list = []
 for idx, val in enumerate(sorted_x):
     data_list.append([val[0],str(val[1])])
 
-with open("hanCategoryResult.csv", "w", newline="") as f:
+with open("Kyung90Result.csv", "w", newline="") as f:
     writer = csv.writer(f)
     writer.writerows(data_list)
