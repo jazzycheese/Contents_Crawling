@@ -1,5 +1,5 @@
-#from bs4 import BeautifulSoup as soup
-#from urllib.request import urlopen
+from bs4 import BeautifulSoup as soup
+from urllib.request import urlopen
 import requests
 from openpyxl import load_workbook
 from openpyxl import Workbook
@@ -7,7 +7,6 @@ from openpyxl import Workbook
 write_wb = Workbook()
 write_ws = write_wb.active
 
-"""
 #=========================Get URL=========================
 page_url = "file:///Users/soyeon/dev/Contents_Crawling/Chosun_Crawling/Contents/pg3.html"
 page = urlopen(page_url)
@@ -35,8 +34,7 @@ for row in get_cells:
             print(tag.text) 
             write_ws.append([tag.text])
 write_wb.save('Chosun_Contents_Result.xlsx')
-print('hello world')
-"""
+
 #=========================Get Categogy=========================
 load_wb = load_workbook("Chosun_URL.xlsx", data_only=True)
 load_ws = load_wb['Sheet']
@@ -55,4 +53,3 @@ for row in get_cells:
             print(category) 
             write_ws.append([category])
 write_wb.save('Chosun_Category_Result.xlsx')
-print('hello world')
